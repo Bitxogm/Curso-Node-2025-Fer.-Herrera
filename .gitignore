@@ -1,0 +1,5 @@
+node_modules/
+.env*
+functions/.runtimeconfig.json
+firebase-config.js
+.sh
