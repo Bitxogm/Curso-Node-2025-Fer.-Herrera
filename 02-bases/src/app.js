@@ -1,18 +1,39 @@
+// const { getAge, getUUID } = require('./plugins')
 // const templateExports =   require('./js-foundation/01-template');
 // const {emailTemplate} = require('./js-foundation/01-template')
 // const { getUserById } = require('./js-foundation/callbacks');
 // const { getUserById } = require('./js-foundation/04-arrow');
- require('./js-foundation/05-factory-functions')
+// const {buildMakePerson} = require('./js-foundation/05-factory-functions');
+const getPokemonById = require("./js-foundation/06-promises");
+
+getPokemonById(1)
+  .then((pokemon) => console.log({pokemon}))
+  .catch((error) => console.log(`Check again later ${error}`))
+  .finally(() => console.log(`Finalizacion`))
 
 
-// const id = 1
-// getUserById(id, (error, user) => {
-//   if(error){
-//     throw new Error(error)
-//   }
-//   console.log(user)
-// });
-// require('./js-foundation/destructuring');
-// console.log(templateExports.emailTemplate);
-// console.log(emailTemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// !Referencia alas factory functions.
+// const makePerson = buildMakePerson({getAge, getUUID})
+// const obj = { name: 'Juan', birthday: '1976-01-10' };
+
+// const bitxo = makePerson(obj);
+// console.log({bitxo});
+
+
 

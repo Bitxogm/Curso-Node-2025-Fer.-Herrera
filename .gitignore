@@ -3,5 +3,5 @@ node_modules/
 functions/.runtimeconfig.json
 firebase-config.js
 check-secrets.sh
-
+*.sh
 scripts/
