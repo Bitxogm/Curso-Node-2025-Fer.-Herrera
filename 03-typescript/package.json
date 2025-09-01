@@ -1,0 +1,17 @@
+{
+  "name": "03-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec node --loader ts-node/esm src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "nodemon": "^3.x",
+    "ts-node": "^10.x",
+    "typescript": "^5.x"
+  }
+}
